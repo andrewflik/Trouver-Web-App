@@ -1,0 +1,223 @@
+    /*--------------------- CSS ----------------------*/
+
+#Full_Page {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Exo';
+    font-weight: 600;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+nav {
+    height: 10vh;
+}
+
+.nav-links {
+    margin-top: 0;
+    width: 40%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    /* Margin set to auto*/
+    justify-content: space-around;
+    /**/
+    align-items: center;
+}
+
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.section h1 {
+    top: 50%;
+    left: 50%;
+    margin-bottom: 70px;
+    text-align: center;
+    color: black;
+    font-weight: 400px;
+    font-family: 'Exo';
+}
+
+.section {
+    text-align: center;
+    display: block;
+    margin-top: 200px;
+    margin-bottom: 300px;
+}
+.footer
+{
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+
+form {
+    outline: 0;
+    display: inline-block;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+form>.textbox {
+    outline: 0;
+    height: 42px;
+    width: 244px;
+    line-height: 42px;
+    padding: 0 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #212121;
+    border: 0;
+    float: left;
+    -webkit-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+}
+
+form>.textbox:focus {
+    outline: 0;
+    background-color: #FFF;
+}
+
+form>.button {
+    outline: 0;
+    background: none;
+    background-color: rgba(38, 50, 56, 0.8);
+    height: 42px;
+    width: 42px;
+    text-align: center;
+    line-height: 42px;
+    border: 0;
+    color: #FFF;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 16px;
+    text-rendering: auto;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-transition: background-color .4s ease;
+    transition: background-color .4s ease;
+    -webkit-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+form>.button:hover {
+    background-color: rgba(0, 150, 136, 0.8);
+}
+
+
+/*------------- Responsive thing -----------------*/
+
+@media screen and (max-width: 768px) {
+    .line/*Menu*/
+    {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 6px;
+    }
+    nav {
+        position: relative;
+    }
+    .context {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+    }
+    .nav-links {
+        background-color: #ffffff;
+        opacity: .4;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        /*animation*/
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .section h1 {
+        opacity: 0;
+        flex-direction: column;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .nav-links li a {
+        font-size: 25px;
+    }
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+    li.fade {
+        opacity: 1;
+    }
+    /*-------------------------------------------------*/
+    </style>/*----------------------------------------------*/
