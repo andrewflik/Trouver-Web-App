@@ -1,3 +1,4 @@
+# Code by - Devesh Rajput Contact for more info - (deveshrajput978@gmail.com)
 import pickle
 from flask import Flask, render_template, request, jsonify
 import requests
