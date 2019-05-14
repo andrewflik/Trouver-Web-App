@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+
+<!------------------------------>
+
+    <title>Fake vs Fact</title>
+
+<!------------------------------>
+
+  <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="static/home.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
+
+  </head>
+
+  <body>
+    <header>
+    </header>
+<!-- Div wrapped around all the sections -->
+
+      <div id = 'Full_Page'>
+
+<!----------------- Navigation Bar -------------->
+          <nav class='navbar-default'>
+
+            <div class = "context">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+
+            <ul class="nav-links">
+              <li><a href = '#'>API</a></li>
+              <li><a href = '#'>About</a></li>
+              <li><a href = '#'>Contact</a></li>
+            </ul>
+
+          </nav>
+<!---------------------------------------------->
+        <div class="section">
+          <h1>Trouver Engine</h1>
+          <h2><strong>Fake News Detector</strong></h2>
+          <form method="POST" action="http://localhost:5000/result">
+            <input type="text" name = "url" class="textbox" placeholder="Search">
+            <input title="Search" value="" type="submit" class="button">
+          </form>
+        </div>
+        <div class = "footer">
+          <h1>Devloped by Devesh Rajput</h1>
+        </div>
+<!--------------Animation CSS----------------------->
+      <div class="bg"></div>
+      <div class="bg bg2"></div>
+      <div class="bg bg3"></div>
+<!-------------------------------------------------->
+      </div> <!-- Full_Page -->
+
+  </body>
+  <script src="static/home.js"></script>
+</html>
