@@ -3,4 +3,4 @@ scikit-learn
 sklearn
 Flask
 Flask-RESTful
-newspaper
+newspaper3k
