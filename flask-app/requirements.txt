@@ -1,6 +1,0 @@
-scipy
-scikit-learn
-sklearn
-Flask
-Flask-RESTful
-newspaper3k
