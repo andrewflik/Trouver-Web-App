@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 from newspaper import Article
 import json
-
+## ADD L
 app = Flask(__name__)
 
 def load_model(url):
